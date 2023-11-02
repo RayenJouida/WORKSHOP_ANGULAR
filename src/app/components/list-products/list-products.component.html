@@ -1,0 +1,10 @@
+<!-- list-products.component.html -->
+
+<ul>
+    <li *ngFor="let product of ListProduct">
+      {{ product.libelle }}
+      <button (click)="showCount(product.libelle)">Calculer</button>
+      <span *ngIf="product.libelle === selectedLibelle">Nombre de produits: {{ productCount }}</span>
+    </li>
+  </ul>
+  

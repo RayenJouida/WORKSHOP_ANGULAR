@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "George",
+      "lastName": "ff",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Customer",
+      "email": "marlon@brando.com",
+      "password": "test",
+      " picture": "https://bootdey.com/img/Content/avatar/avatar2.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 2,
+      "firstName": "George",
+      "lastName": "gg",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Customer",
+      "email": "marlon@brando.com",
+      "password": "test",
+      " picture": "https://bootdey.com/img/Content/avatar/avatar2.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 3,
+      "firstName": "George",
+      "lastName": "Clooney",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Customer",
+      "email": "marlon@brando.com",
+      "password": "test",
+      " picture": "https://bootdey.com/img/Content/avatar/avatar2.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 4,
+      "firstName": "George",
+      "lastName": "Clooney",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Customer",
+      "email": "marlon@brando.com",
+      "password": "test",
+      " picture": "https://bootdey.com/img/Content/avatar/avatar2.png",
+      "profession": "Software Engineer"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "customerName": "Alice Smith",
+      "amount": 75.5,
+      "date": "2023-10-28",
+      "status": "Unpaid"
+    },
+    {
+      "id": 2,
+      "customerName": "Alice Smith",
+      "amount": 75.5,
+      "date": "2023-10-28",
+      "status": "Unpaid"
+    },
+    {
+      "id": 3,
+      "discountAmount": 300,
+      "billAmount": 50,
+      "dateBill": "2023-10-29",
+      "status": true
+    },
+    {
+      "id": 5,
+      "discountAmount": 300,
+      "billAmount": 50,
+      "dateBill": "2023-10-29",
+      "status": true
+    }
+  ],
+  "fournisseurs": [
+    {
+      "id": 2,
+      "code": "2ABC4522",
+      "libelle": "dell"
+    },
+    {
+      "id": 3,
+      "code": "3ABC4522",
+      "libelle": "lenovo"
+    },
+    {
+      "id": 400,
+      "code": "40ABC452",
+      "libelle": "asus"
+    }
+  ]
+}

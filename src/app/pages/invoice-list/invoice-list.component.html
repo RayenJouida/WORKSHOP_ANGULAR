@@ -1,0 +1,15 @@
+<div *ngIf="invoices && invoices.length > 0; else noInvoices">
+  <ul>
+    <li *ngFor="let invoice of invoices">
+      Facture {{ invoice.id }} - Montant : {{ invoice.billAmount }} - Statut : {{ invoice.status }}
+      <button (click)="deleteInvoice(invoice.id)">Supprimer</button>
+      <button (click)="updateInvoice(invoice)">Mettre à jour</button>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noInvoices>
+  <p>Aucune facture disponible</p>
+</ng-template>
+
+<button (click)="addNewInvoice()">Ajouter une nouvelle facture</button>

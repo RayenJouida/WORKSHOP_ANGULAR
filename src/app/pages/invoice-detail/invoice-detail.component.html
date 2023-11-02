@@ -1,0 +1,15 @@
+<h1>Facture Détails</h1>
+
+<div *ngIf="invoice">
+  <p>Numéro de facture : {{ invoice.id}}</p>
+  <p>Montant de la facture : {{ invoice.discountAmount }}</p>
+  <p>Montant de la remise : {{ invoice. billAmount }}</p>
+  <p>Date de la facture : {{ invoice.dateBill }}</p>
+  <p>Active : {{ invoice.status }}</p>
+</div>
+
+<div *ngIf="!invoice">
+  <p>Facture non trouvée ou inactive.</p>
+</div>
+
+<button [routerLink]="['/main-invoice']">Retour</button>

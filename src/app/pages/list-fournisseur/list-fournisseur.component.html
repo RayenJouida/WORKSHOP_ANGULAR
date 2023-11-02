@@ -1,0 +1,16 @@
+<p>list-fournisseur works!</p>
+
+<div>
+    <input [(ngModel)]="search" type="text" placeholder="Search by ID">
+    <button (click)="searchById()" >Search</button>
+</div>
+
+<div *ngFor="let f of listFournisseurs">
+    <fieldset [style.background-color]="f.libelle == 'hp' ? 'green' : 'yellow'" (dblclick)="deleteFournisseur(f)" (click)="toDetails(f)">
+        <legend>{{f.id}}</legend>
+        <p [ngStyle]="{'font-weight': f.code.startsWith('2A') ? 'bold' : 'normal'}">Code: {{f.code}}</p>
+        <p>Libelle: {{f.libelle}}</p>
+        <button (click)="deleteFournisseur(f)">Supprimer</button>
+        <button (click)="editFournisseur(f)">Modifier</button>
+    </fieldset>
+</div>
